@@ -1,6 +1,6 @@
 ---
   - name: Connectivity Check Utility
-    hosts: ansible1
+    #hosts: ansible1
     gather_facts: no
     tasks:
 
