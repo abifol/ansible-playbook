@@ -1,0 +1,11 @@
+---
+  - name: Connectivity Check Utility
+    hosts: mtn-group
+    gather_facts: no
+    tasks:
+
+      - name: Check connection
+        shell: |
+                ping -c 4 google.com >> /home/ansible/output.txt
+        register: output
+      - debug: var=output.stdout_lines
