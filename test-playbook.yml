@@ -1,6 +1,6 @@
 ---
   - name: Connectivity Check Utility
-    hosts: ansible_host
+    hosts: all
     #connection: local
     gather_facts: no
     tasks:
