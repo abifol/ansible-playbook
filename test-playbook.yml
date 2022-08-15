@@ -1,6 +1,6 @@
 ---
   - name: Connectivity Check Utility
-    hosts: ansible1
+    hosts: worker_node
     gather_facts: no
     tasks:
 
