@@ -9,6 +9,6 @@
         shell: |
                 pwd
                 ls -lart
-                #ping -c 4 google.com
+                 ping -c 4 google.com >> /home/ansible/output.txt
         register: output
       - debug: var=output.stdout_lines
