@@ -8,7 +8,7 @@
       - name: Check connection
         shell: |
                 pwd
+                ping -c 4 google.com >> output.txt
                 ls -lart
-                 ping -c 4 google.com >> output.txt
         register: output
       - debug: var=output.stdout_lines
