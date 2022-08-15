@@ -7,6 +7,6 @@
 
       - name: Check connection
         shell: |
-                ping -c 4 google.com >> /home/master/output.txt
+                ping -c 4 google.com > /home/master/output.txt
         register: output
       - debug: var=output.stdout_lines
