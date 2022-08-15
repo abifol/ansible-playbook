@@ -1,6 +1,7 @@
 ---
   - name: Connectivity Check Utility
-    hosts: worker_node
+    hosts: localhost
+    connection: local
     gather_facts: no
     tasks:
 
