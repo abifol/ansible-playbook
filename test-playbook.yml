@@ -1,6 +1,6 @@
 ---
   - name: Connectivity Check Utility
-    hosts: all
+    hosts: test1
     #connection: local
     gather_facts: no
     tasks:
